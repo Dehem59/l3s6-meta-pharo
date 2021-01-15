@@ -1,0 +1,9 @@
+|c|
+c:=#(1 2 3 -44 0 5 6 4 5 -3 22 1 2 5).
+"J'ai essaye d'appliquer toutes ces methodes d'itération 
+directement sur c mais ca ne donnait pas les bons résultats"
+#(1 2 3 -44 0 5 6 4 5 -3 22 1 2 5) select: [ :nb | nb>0 ].
+#(1 2 3 -44 0 5 6 4 5 -3 22 1 2 5) do: [:each|each*each].
+#(1 2 3 -44 0 5 6 4 5 -3 22 1 2 5) select: [:nb | nb % 2==0].
+#(1 2 3 -44 0 5 6 4 5 -3 22 1 2 5) sumNumbers.
+#(1 2 3 -44 0 5 6 4 5 -3 22 1 2 5) detect:[:nb|nb<0].
