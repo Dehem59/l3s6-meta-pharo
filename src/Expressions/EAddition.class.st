@@ -1,6 +1,6 @@
 Class {
 	#name : #EAddition,
-	#superclass : #Object,
+	#superclass : #EExpression,
 	#instVars : [
 		'left',
 		'right'
